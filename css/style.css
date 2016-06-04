@@ -1,123 +1,139 @@
 body, html {
-	margin: 0;
-	padding: 0;
-	background-color: #f7f7f7;
-	font-family: 'PT Sans', sans-serif;
-	font-weight: 400;
-	font-size: 16px;
-	width: 100%;
-	height: 100%;
-    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+    /*overflow: hidden;*/
 }
+
+/** {
+    box-sizing: border-box;
+}*/
 
 .wrapper {
-	height: 100%;
-	width: 100%;
-	/*overflow: hidden;*/
-	position: relative;
+    height: 100%;
+    width: 100%;
+    /*overflow: hidden;*/
+    position: relative;
 /*    background: url(/img/d-logo.jpg) no-repeat 50% 50%;*/
     background-size: cover;
- 
-}
+ }
 
-.wrap-head {
-	display: flex;
+
+.header-flex {
+    display:flex;
+    justify-content: space-between;
+    align-content: flex-end;
+    margin-top: 3.7%;
 }
 
 .container {
-/*	max-width: 89.47%;*/
-	margin: 0 auto;
-	position: relative;
+    width: 89.4736%;
+    margin: 0 auto;
 }
-
-
-.page-header {
-	width: 100%;
-	height: 100px;
-	top: 0;
-}
-
-
 
 /********************* УГОЛКИ ************/
 
 
 
 .corner-header img {
-	z-index: 1;
-/*	transform: rotate(-7.7deg);*/
-	position: relative;
-	top:0px;
-	left: 0px;
-    width: 100%;
+    width: 26.5263%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.corner-footer {
+    width: 26%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 
 
-.footer-wrap {
-	display: flex;
-	justify-content: space-around;
-}
+/*.footer-wrap {
+    display: flex;
+    justify-content: space-around;
+}*/
 
 
 /********************* HEADER ***************/
 .page-header {
-	display: inline-block;
+    display: inline-block;
 
 }
 
 .logo {
-        clear: both;
     width: 10%;
-    margin-left: 65px;
-    position: relative;
-    top: -20px;
 }
 
 
 .logo img {
     z-index: 30;
-    position: relative;
-    width: 100%;
+    width: 10%;
+    position: absolute;
 }
 
-.anons {
-	position: absolute;
-    width: 100%;
-    /* margin: 0 auto; */
-    top: 10%;
-    font-family: 'PT Sans', sans-serif;
-    font-weight: 400;
-    font-size: 25px;
-    line-height: 100%;
-    color: #ca3f55;
-    text-align: center;
-    z-index: 50;
+
+
+/****** Menu ****************/
+
+.main-menu {
+    z-index: 2; 
+    display: block;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+
+.main-menu h2 {
+    font-weight: 600;
+    font-size: 1.15vw;
+    text-transform: uppercase;
+    color: #575656;
+    letter-spacing: 0.05em;
+    display: inline-block;
+}
+
+.main-menu img {
+    cursor: pointer;
+    display: inline-block;
+}
+
+
+
 /**************** SLIDER ********************/
 
 .slider {
-	position: relative;
-	margin-bottom: 156px;
+    position: relative;
+    /*margin-bottom: 5%;*/
 
 }
 
 .slider-pic {
-	max-width: 100%;
+    max-width: 100%;
+    margin-top: 5%;
 }
 
 
 .mask-slider {
-	max-width: 100%;
-	position: absolute;
-	bottom: 1px;
-	left: 1px;
+    max-width: 100%;
+    position: absolute;
+    bottom: 1px;
+    left: 1px;
 }
 
 .mask-color {
-	max-width: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .slider-title-cont {
@@ -130,17 +146,15 @@ body, html {
     position: absolute;
     z-index: 40;
     left: 0px;
-    top: 15%;
+    top: 22%;
     width: 100%;
-    height: 61%;
+    height: 53%;
 }
 
-.slider-wrap {
 
-}
 
 .slider-title h1 {
-	font-weight: 400;
+    font-weight: 400;
     font-size: 8.5vw;
     line-height: 80%;
     letter-spacing: 0.1em;
@@ -151,12 +165,12 @@ body, html {
 }
 
 .slider-title h1 span {
-	font-weight: bold;
+    font-weight: bold;
 }
 
 
 .slider-title p {
-	display: block;
+    display: block;
     font-weight: 400;
     font-size: 1.57vw;
     line-height: 100%;
@@ -178,7 +192,7 @@ body, html {
 }
 
 .white-row {
-	    width: 26%;
+        width: 26%;
     height: 1px;
     background-color: #ffffff;
     transform: rotate(20deg);
@@ -205,35 +219,35 @@ body, html {
 /******************* FOOTER ***************/
 
 .phone {
-	font-size: 24px;
-	font-weight: 600;
-	line-height: 80%;
-	color: #575656;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 80%;
+    color: #575656;
 }
 
 .mail {
-	font-weight: 600;
-	font-size: 14px;
-	color: #ca3f55;
-	margin: 0;
-	letter-spacing: 0.06em;
-	margin-top: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #ca3f55;
+    margin: 0;
+    letter-spacing: 0.06em;
+    margin-top: 10px;
 }
 
 .address {
-	font-weight: 600;
-	font-size: 14px;
-	color: #575656;
-	margin: 0;
-	letter-spacing: 0.02em;
-	margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #575656;
+    margin: 0;
+    letter-spacing: 0.02em;
+    margin-bottom: 20px;
 }
 
 .copyright {
-	font-weight: 400;
-	font-size: 14px;
-	color: #575656;
-	letter-spacing: -0.01em;
+    font-weight: 400;
+    font-size: 14px;
+    color: #575656;
+    letter-spacing: -0.01em;
 }
 
 
@@ -245,24 +259,24 @@ header {
 
 
 
-main {
+/*main {
     position: relative;
     top: 7%;
-}
+}*/
 
-footer {
+/*footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-}
+}*/
 
 .contacts {
     width: auto;
-    float: left;
-    margin-left: 65px;
+    /*float: left;*/
+    /*margin-left: 65px;*/
 }
 
-.corner-footer {
+/*.corner-footer {
     bottom: 0px;
     right: 0px;
     position: absolute;
@@ -277,4 +291,4 @@ footer {
 .corner-header {
     width: 25%;
     float: left;
-}
+}*/
