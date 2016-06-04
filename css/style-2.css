@@ -9,7 +9,7 @@ body, html {
     height: 100%;
   }
 
-.wrapper-2 {
+.wrapper-gray {
 	  background-color: #f7f7f7;
 }
 
@@ -30,6 +30,7 @@ body, html {
 	color: #58595b;
 	line-height: 2.3333;
 	letter-spacing: 0.05em;
+	margin-right: 4%;
 }
 
 .main-menu-2 {
@@ -178,9 +179,7 @@ body, html {
 	font-weight: 400;
 	color: #fff;
 	font-size: 1.1052vw;
-	/*padding-bottom: 0;*/
 	line-height: 1.4285;
-
 }
 
 .correct-item {
@@ -198,3 +197,188 @@ body, html {
 }
 
 /* Slide #4 */
+
+
+.clients-row {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+}
+
+.clients-row-item {
+	width: 33.3686%;
+	height: 16.8421vw;
+	text-align: center;
+	align-self: center;
+	border-top: 1px solid #dddddd;
+	border-right: 1px solid #dddddd;
+	display: block;
+}
+
+.clients-row-item:last-child {
+	border-right: none;
+}
+
+.wd img {
+	padding-top: 15%;
+}
+.frei {
+	background-color: #fff;
+	width: 100%;
+	height: 16.8421vw;
+	border-bottom: none;
+}
+
+.correct-item-frei {
+	width: 33.29%;
+}
+
+.frei img {
+	padding-top: 16%;
+}
+
+.love-republic img,
+.kationorm img,
+.natukoksinum img,
+.international-paper img {
+	padding-top: 21%;
+}
+
+.border-none {
+	border-top: none;
+	border-bottom: 1px solid #dddddd;;
+}
+
+/* Slide Contacts */
+
+.contact-block {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.contact-block h2 {
+	font-weight: 600;
+	font-size: 2.5263vw;
+	color: #575656;
+	margin: 0;
+
+}
+
+.margin h1 {
+	margin-bottom: 0;
+}
+
+.contact-block p {
+	font-weight: 400;
+	font-size: 1.2631vw;
+	color: #575656;
+	margin-top: 1%;
+}
+
+.call-request {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-wrap: nowrap;
+}
+
+.request-field {
+	width: 66%;
+	flex-shrink: 1;
+}
+
+.request-field input[placeholder] {
+	font-size: 0.9473;
+	line-height: 1.1111;
+	color: #9b9b9b;
+	padding-left: 1.5789%;
+	padding-top: 1.3157%;
+	padding-bottom: 1.3157%;
+}
+
+.request-field input[type="text"] {
+	width: 30.5263vw;
+	background-color: #eeeeee;
+	margin-right: 2.1052%;
+	border: none;
+	outline: none;
+}
+
+.request-field input[type="tel"] {
+	width: 30.5263vw;
+	background-color: #eeeeee;
+	border: none;
+	outline: none;
+}
+
+.call-request input[type="submit"] {
+	border: none;
+	outline: none;
+	background-color: #d64943;
+	color: #fff;
+	margin-top: 1.5789%;
+	width: 21.0526%;
+	cursor: pointer;
+}
+
+.call-request input[value] {
+	font-weight: 400;
+	font-size: 1.5789vw;
+	letter-spacing: 0.04em;
+	padding-top: 0.3%;
+	padding-bottom: 0.3%;
+}
+
+.call-request input[type="submit"]:hover {
+	opacity: 0.7;
+}
+
+.call-request input[type="submit"]:active {
+	background-color: #f7b942;
+}
+
+.map {
+	border: none;
+	margin-top: 2%;
+}
+
+.copyright-4 {
+	display: flex;
+	justify-content: space-between;
+	background-color: #e5e5e5;
+}
+
+.copyright-4 p {
+	font-weight: 400;
+	font-size: 14px;
+	color: #575656;
+	letter-spacing: -0.01em;
+	margin-left: 5%;
+	margin-top: 1.5%;
+}
+
+.social {
+	display: flex;
+	align-items: center;
+	margin-right: 5%;
+	width: 15%;
+}
+
+.fb {
+	width: 3%;
+}
+
+.insta {
+	width: 5%;
+}
+
+.youtube {
+	width: 5%;
+}
+
+.social a,
+.social p {
+margin-right: 5%;
+}
