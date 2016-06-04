@@ -1,7 +1,7 @@
 body, html {
     margin: 0;
     padding: 0;
-    background-color: #f7f7f7;
+    background-color: #fff;
     font-family: 'PT Sans', sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -9,7 +9,9 @@ body, html {
     height: 100%;
   }
 
-
+.wrapper-2 {
+	  background-color: #f7f7f7;
+}
 
 .logo-2 {
 	width: 10%;
@@ -19,7 +21,7 @@ body, html {
 .page-header {
 	display: flex;
 	justify-content: space-between;
-	margin-top: 2.5%;
+	padding-top: 2.5%;
 }
 
 .page-header h1 {
@@ -31,12 +33,11 @@ body, html {
 }
 
 .main-menu-2 {
-	/*display: inline-block;*/
-	/*height: 1%;*/
 	display: flex;
 	justify-content: space-between;
 	align-content: center;
 	margin-right: 5%;
+	cursor: pointer;
 }
 
 .main-menu-2 h2 {
@@ -59,18 +60,20 @@ body, html {
 	align-self: flex-end;
 }
 
-/* Кто мы */
+/* about-company */
 
-.who-we {
+.about-company {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
+	flex-wrap: nowrap;
 }
 
-.who-we__desc {
+.about-company__desc {
 	margin-left: 5%;
+	width: 50%;
 }
 
-.who-we__desc h3 {
+.about-company__desc h3 {
 	font-weight: 400;
 	font-size: 2.5263vw;
 	color: #58595b;
@@ -78,9 +81,9 @@ body, html {
 	letter-spacing: 0.06em;
 }
 
-.who-we__text p {
+.about-company__text p {
 	display: block;
-    width: 60%;
+    width: 80%;
     margin-left: 15%;
     font-weight: 400;
     font-size: 1.2631vw;
@@ -90,7 +93,7 @@ body, html {
 }
 
 
-.who-we__text p::before {
+.about-company__text p::before {
 	content: "";
 	background: url("../img/row-gray.png") no-repeat;
 	position: absolute;
@@ -101,14 +104,97 @@ body, html {
   height: 40%;
 }
 
-.who-we__text {
+.about-company__text {
 	position: relative;
 }
 
-.who-we__img {
-	width: 50%;	
+.about-company__img {
+	width: 55.5%;	
+	margin-bottom: -4px;
 }
 
-.who-we__img img {
+.about-company__img img {
 	width: 100%;
+	height: 100%;
 }
+
+.copyright-2 p {
+    font-weight: 400;
+    font-size: 14px;
+    color: #575656;
+    letter-spacing: -0.01em;
+    margin-left: 5%;
+
+}
+
+/* Mouse scroll */
+
+.mouse-scroll-2,
+.mouse-scroll-3 {
+	width: 1.4210%;	
+}
+
+.copyright-2,
+.copyright-3 {
+	position: relative;
+}
+
+.mouse-scroll-2 img,
+.mouse-scroll-3 img {
+	position: absolute;
+	bottom: 70px;
+  left: 49%;
+}
+
+/* Slide #3 */
+
+.wrapper-3 {
+	background-color: #fff;
+}
+
+.services-row {
+	display: flex;
+	justify-content: center;
+}
+
+.services-row-item {
+	width: 33%;
+	background: url("../img/bg-services-item.png") no-repeat;
+	text-align: center;
+	padding: 0 2.1052%;
+	outline: none;
+	border: none; 	
+}
+
+.services-row-item h3 {
+	font-size: 600;
+	color: #fff;
+	font-size: 1.8947vw;
+	letter-spacing: 0.06em;
+}
+
+.services-row-item p {
+	font-style: italic;
+	font-weight: 400;
+	color: #fff;
+	font-size: 1.1052vw;
+	/*padding-bottom: 0;*/
+	line-height: 1.4285;
+
+}
+
+.correct-item {
+	margin-left: -2px;
+	margin-right: -2px;
+}
+
+.copyright-3 p {
+	font-weight: 400;
+	font-size: 14px;
+	color: #575656;
+	letter-spacing: -0.01em;
+	margin-left: 5%;
+	margin-top: 8.5%;
+}
+
+/* Slide #4 */
