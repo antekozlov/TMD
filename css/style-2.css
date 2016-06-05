@@ -33,15 +33,61 @@ body, html {
 	margin-right: 4%;
 }
 
-.main-menu-2 {
+/* MENU */
+
+.main-menu-list {
+	z-index: 50;
+	list-style: none;
+	margin-top: 10%;
+  padding-left: 15%;
+  position: relative;
+}
+
+.main-menu-list::after {
+	content: '';
+	display: block;
+	background: url("../img/icon-close-menu.png") no-repeat;
+	width: 12vw;
+	position: absolute;
+	height: 11vw;
+	bottom: 82%;
+	right: -5%;
+	cursor: pointer;
+}
+
+.main-menu-list a {
+	text-decoration: none;
+	font-weight: 400;
+	font-size: 4.2110vw;
+	color: #575656;
+	letter-spacing: 0.04em;
+	line-height: 1.5;
+}
+
+.main-menu-list a:hover {
+	font-weight: 600;
+	color: #ce587a;
+}
+
+.menu-sheet {
+	display: none;      /* скрываем высплывающее меню */
+	width: 90vw;        
+	height: 55vw;
+	background-color: #f1f1f1;
+	opacity: 0.9;
+	position: absolute;
+	top: 5%;
+	left: 5%;
+}
+
+.main-menu {
 	display: flex;
 	justify-content: space-between;
 	align-content: center;
 	margin-right: 5%;
-	cursor: pointer;
 }
 
-.main-menu-2 h2 {
+.main-menu h2 {
 	display: inline-block;
 	line-height: 0;
 	text-transform: uppercase;
@@ -50,11 +96,13 @@ body, html {
 	letter-spacing: 0.05em;
 	font-weight: 600;
 	font-size: 0.8421vw;
+	cursor: pointer;
 }
 
-.main-menu-2 img {
+.main-menu img {
 	vertical-align: middle;
 	margin-bottom: 10px;
+	cursor: pointer;
 }
 
 .page-header h1 {
@@ -363,22 +411,30 @@ body, html {
 	display: flex;
 	align-items: center;
 	margin-right: 5%;
-	width: 15%;
+	width: 50%;
+	width: 50%;
+  justify-content: flex-end;
 }
 
-.fb {
-	width: 3%;
+.fb img {
+	width: 100%;
 }
 
-.insta {
-	width: 5%;
+.insta img {
+	width: 100%;
 }
 
-.youtube {
-	width: 5%;
+.youtube img {
+	width: 100%;
 }
 
 .social a,
 .social p {
-margin-right: 5%;
+margin-right: 3%;
+display: block;
 }
+
+.social p {
+	margin-top: 10px;
+}
+
