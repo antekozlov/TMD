@@ -583,18 +583,18 @@ display: block;
 	height: 39vw;
 }
 
-
+/*
 .container {
   width: 90%;
   margin: 0 auto;
-}
+}*/
 
 .slider-frei__title__img {
 	text-align: right;
 	margin-top: 7%;
 }
 
-.popup-desc__header {
+/*.popup-desc__header {
 	display: flex;
 	justify-content: space-between;
 	margin-top: 2%;
@@ -619,7 +619,7 @@ display: block;
 .popup-desc__row-1__right {
 	width: 50%;
 }
-
+*/
 .slider-frei__title h2 {
 	font-size: 3vw;
 	font-weight: 600;
@@ -637,7 +637,7 @@ display: block;
 	letter-spacing: 0.04em;
 }
 
-.popup-desc__header span {
+/*.popup-desc__header span {
 	font-weight: 600;
 	font-size: 0.95vw;
 	letter-spacing: 0.04em;
@@ -666,9 +666,68 @@ display: block;
 
 .popup-desc__row-2 {
 	padding-bottom: 2%;
-}
+}*/
 
 .slider-frei__title h2::after {
+	content: '';
+	display: block;
+	background: url("../img/icon-close-menu.png") no-repeat;
+	width: 12vw;
+	position: absolute;
+	height: 11vw;
+	bottom: 78%;
+	right: -6%;
+	cursor: pointer;
+}
+
+/*  LOVE REPUBLIC */
+
+.wrapper-popup-love {
+	position: absolute;
+	top: -45%;
+	right: 0;
+	background-color: #fff;
+	z-index: 60;
+	border: 1vw solid #3c3c3c;
+	width: 97vw;
+	display: block;     /* скрываем окно */
+}
+
+.slider-love__item {
+	background: #3c3c3c url("../img/bg-love-republic.jpg") no-repeat 50% 50%;
+	width: 97vw;
+	height: 39vw;
+}
+
+/*
+.container {
+  width: 90%;
+  margin: 0 auto;
+}*/
+
+.slider-love__title__img {
+	text-align: right;
+	margin-top: 7%;
+}
+
+.slider-love__title h2 {
+	font-size: 3vw;
+	font-weight: 600;
+	letter-spacing: 0.04em;
+	color: #fff;
+	margin-top: 0;
+	padding-top: 2%;
+	width: 35vw;
+}
+
+.slider-love__title p {
+	color: #fff;
+	font-weight: 400;
+	font-size: 1.2631vw;
+	letter-spacing: 0.04em;
+}
+
+.slider-love__title h2::after {
 	content: '';
 	display: block;
 	background: url("../img/icon-close-menu.png") no-repeat;
