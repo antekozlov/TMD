@@ -99,10 +99,11 @@ body, html {
 	cursor: pointer;
 }
 
-.main-menu img {
+.main-menu__img {
 	vertical-align: middle;
 	margin-bottom: 10px;
 	cursor: pointer;
+	width: 35%;
 }
 
 .page-header h1 {
