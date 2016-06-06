@@ -214,7 +214,7 @@ body, html {
 }
 
 .menu-sheet {
-	display: none;      /* скрываем высплывающее меню */
+	display: block;      /* скрываем высплывающее меню */
 	width: 90vw;        
 	height: 55vw;
 	background-color: #f1f1f1;
@@ -222,6 +222,7 @@ body, html {
 	position: absolute;
 	top: 5%;
 	left: 5%;
+	z-index: 20;
 }
 
 .main-menu {
