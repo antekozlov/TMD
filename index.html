@@ -3,41 +3,68 @@
 <head>
 	<meta charset="UTF-8">
 	<title>TMD</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/normalize.min.css">
+	<link rel="stylesheet" href="js/owl/assets/owl.carousel.css" />
 	<link rel="stylesheet" href="css/style.css">
+	 <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+
+	
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+
+	<!-- This following line is only necessary in the case of using the plugin option `scrollOverflow:true` -->
+	<!--    <script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>-->
+
+	<script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+	<script type="text/javascript" src="js/owl/owl.carousel.min.js"></script>
+
+
+<!--
+    <link rel="stylesheet" href="css/onepage-scroll.css">
+    <script type="text/javascript" src="js/onepagescroll.min.js" ></script>
+  -->
+
+  <script type="text/javascript" src="js/init.js" ></script>
 </head>
 <body>
-	<section>
-		<div class="wrapper-gray">
-			<div class="corner-header">
-				<img src="img/corner-header.png" width="100%" alt="">
+	<div class="page-header">
+		<div class="logo-2">
+			<a class="logo-desk" href="#home"><img src="img/logo.png" width="100%" alt="logo"></a>
+				<a class="logo-mobile" href="#home"><img src="img/logo-mobile.png" width="100%" alt="logo"></a>
+			
+		</div>
+		<div class="main-menu">
+			<h2>Меню</h2>
+			<div class="main-menu__img">
+				<img src="img/icon-main-menu.png" width="100%" alt="menu">
 			</div>
-			<div class="page-header">
-				<div class="logo-2">
-					<img  src="img/logo.png" width="100%" alt="logo">
-				</div>
-				<div class="main-menu">
-					<h2>Меню</h2>
-					<div class="main-menu__img">
-						<img src="img/icon-main-menu.png" width="100%" alt="menu">
-					</div>
-					<!-- MENU  -->
-					<div class="menu-sheet">
-						<ul class="main-menu-list">
-							<li><a href="#">Кто мы</a></li>
-							<li><a href="#">Услуги</a></li>
-							<li><a href="#">Клиенты</a></li>
-							<li><a href="#">Контакты</a></li>
-						</ul>
-					</div>
-				</div>
+			<!-- MENU  -->
+			<div class="menu-sheet">
+				<div class="close-btn"></div>
+				<ul class="main-menu-list">
+					<li><a href="#about">Кто мы</a></li>
+					<li><a href="#services">Услуги</a></li>
+					<li><a href="#clients">Клиенты</a></li>
+					<li><a href="#map">Контакты</a></li>
+				</ul>
 			</div>
-		<!-- </div> -->
-		<!-- Main Slider  -->
-		<div class="slider-main-wrap">
-			<div class="slider-main">
-				<img src="img/main-slider-1.jpg" width="100%" alt="">
+		</div>
+	</div>
+	<div id="fullpage">
+		<section class="section">
+			<div class="wrapper-gray">
+				<div class="corner-header">
+					<img src="img/corner-header.png" width="100%" alt="">
+				</div>
+				<!-- Main Slider  -->
+				<div class="slider-main-wrap">
+					<div class="slider-main">
+						<img src="img/main-slider-1.jpg" width="100%" alt="">
 			<!-- <img src="img/main-slider-2.jpg" width="100%" alt="">
 			<img src="img/main-slider-3.jpg" width="100%" alt=""> -->
 		</div>
@@ -48,204 +75,212 @@
 			</div>
 		</div>
 	</div>
-	<div class="container">
-				<div class="contacts">
-					<span class="phone">+7(499) 394-61-15</span>
-					<p class="mail">hello@totalmarketing.digital</p>
-					<p class="address">г. Москва, ул. Ибрагимова, д.31</p>
-					<p class="copyright">&copy; 2016 TMD. All Rights Reserved.</p>
-					<div class="corner-footer">
+	<div class="container-contacts">
+		<div class="contacts">
+			<span class="phone">+7(499) 394-61-15</span>
+			<p class="mail">hello@totalmarketing.digital</p>
+			<p class="address">г. Москва, ул. Ибрагимова, д.31</p>
+			<p class="copyright">&copy; 2016 TMD. All Rights Reserved.</p>
+			<div class="corner-footer">
 				<img src="img/corner-footer.png" width="100%" alt="">
 			</div>
-				</div>
-					</div>
-			
-			</div>
-			
+		</div>
+	</div>
+</div>
 </section>
+<section  class="section about-us">
+	<div class="wrapper-gray">
+		<div class="block-header">
+			<h1>О компании</h1>
+		</div>
+		<!--  About Company -->
+		<div class="content_block_wrp about_block">
+            
+          
+			     <div class="about-company">
+			     	<div class="about-company__desc">
+			     		<div class="desc-item">
+			     			<h3>Кто <strong>мы</strong></h3>
+			     			<div class="about-company__text">
+			     				<p>Полносервисное Digital-агентство,<br> основанное в 2014 году</p>
+			     			</div>
+			     		</div>
+			     	</div>
+			     	<div class="about-company__img who-we">
+			     		<img src="img/1-row-corner.png" width="100%" alt="">
+			     	</div>
+			     </div>
+        
+			     <div class="about-company">
+			     	<div class="about-company__img we-do">
+			     		<img src="img/2-row-corner.png" width="100%" alt="">
+			     	</div>
+			     	<div class="about-company__desc about-company__desc--we-do ">
+			     		<div class="desc-item">
+			     			<h3>Что <strong>мы делаем</strong></h3>
+			     			<div class="about-company__text">
+			     				<p>Мы создаём комплексные digital-решения<br> для реализации ваших самых сложных бизнес-задач</p>
+			     			</div>
+			     		</div>
+			     	</div>
+			     </div>
+        
+			     <div class="about-company">
+			     	<div class="about-company__desc">
+			     		<div class="desc-item">
+			     			<h3>Наш <strong>подход</strong></h3>
+			     			<div class="about-company__text">
+			     				<p>Мы сочетаем глубокое понимание вашего продукта, аналитические данные, продуманную стратегию и чуточку смелости, чтобы создавать действительно работающие решения</p>
+			     			</div>
+			     		</div>
+			     	</div>
+			     	<div class="about-company__img our-metod">
+			     		<img src="img/3-row-corner.png" width="100%" alt="">
+			     	</div>
+        
+			     </div>
+                
+             
 
-	<section>
-		<div class="wrapper-gray">
-			<div class="page-header">
-				<div class="logo-2">
-					<img  src="img/logo.png" width="100%" alt="logo">
-				</div>
-				<h1>О компании</h1>
-				<div class="main-menu">
-					<h2>Меню</h2>
-					<div class="main-menu__img">
-						<img src="img/icon-main-menu.png" width="100%" alt="menu">
-					</div>
-					<!-- MENU  -->
-	<!-- 				<div class="menu-sheet">
-						<ul class="main-menu-list">
-							<li><a href="#">Кто мы</a></li>
-							<li><a href="#">Услуги</a></li>
-							<li><a href="#">Клиенты</a></li>
-							<li><a href="#">Контакты</a></li>
-						</ul>
-					</div> -->
-				</div>
-			</div>
-			<div class="about-company">
-				<div class="about-company__desc">
-					<h3>Кто <strong>мы</strong></h3>
-					<div class="about-company__text">
-						<p>Полносервисное Digital-агентство,<br> основанное в 2014 году</p>
-					</div>
-				</div>
-				<div class="about-company__img">
-					<img src="img/who-we-slide-1.jpg" alt="">
-				</div>
-			</div>
-			<div class="about-company">
-				<div class="about-company__img">
-					<img src="img/we-do-slide-1.jpg" alt="">
-				</div>
-				<div class="about-company__desc about-company__desc--we-do ">
-					<h3>Что <strong>мы делаем</strong></h3>
-					<div class="about-company__text">
-						<p>Мы создаём комплексные digital-решения<br> для реализации ваших самых сложных бизнес-задач</p>
-					</div>
-				</div>
-			</div>
-			<div class="about-company">
-				<div class="about-company__desc">
-					<h3>Наш <strong>подход</strong></h3>
-					<div class="about-company__text">
-						<p>Мы сочетаем глубокое понимание вашего продукта, аналитические данные, продуманную стратегию и чуточку смелости, чтобы создавать действительно<br> работающие решения</p>
-					</div>
-				</div>
-				<div class="about-company__img">
-					<img src="img/our-metod-slide-1.jpg" alt="">
-				</div>
-			</div>
-			<div class="copyright-2">
-				<p>&copy; 2016 TMD. All Rights Reserved.</p>
-				<div class="mouse-scroll-2">
-					<img src="img/mouse-scroll.png" alt="mouse">
-				</div>
-			</div>
 		</div>
-	</section>
-	<section>
-		<div class="wrapper-white">
-			<div class="page-header">
-				<div class="logo-2">
-					<img  src="img/logo.png" width="100%" alt="logo">
-				</div>
-				<h1>Услуги</h1>
-				<div class="main-menu">
-					<h2>Меню</h2>
-					<div class="main-menu__img">
-						<img src="img/icon-main-menu.png" width="100%" alt="menu">
+		
+	</div>
+</section>
+<section class="section" >
+	<div class="wrapper-white" >
+		<div class="block-header">
+			<h1>Услуги</h1>
+		</div>
+		<div class="content_block_wrp">
+			<div class="rows-wrapper">
+				<div class="services-row">
+					<div class="services-pict pict-1">
+						<h3>RTB/Programmatic</h3>
+						<div class="services-row-item sr-item-1">
+							<h3>RTB/Programmatic</h3>
+							<p>«Умная» медийная реклама – это уже не будущее, а настоящее. Мы работаем с ведущими поставщиками данных, позволяющими точно найти нужный нашим клиентам подход к целевой аудитории. Мы обладаем достаточным опытом для прогноза целевых показателей (CPA, ROI и других) для любой медийной кампании.</p>
+						</div>
+					</div>
+					<div class="services-pict pict-2">
+						<h3>Контекст</h3>
+						<div class="services-row-item sr-item-2">
+							<h3>Контекст</h3>
+							<p>Реклама, удовлетворяющая существующий спрос. Мы работаем напрямую с Яндексом и Google и контролируем весь процесс размещения в контексте. Сертифицированные специалисты агентства готовы решать любые задачи клиента.</p>
+						</div>
+					</div>
+					<div class="services-pict pict-3">
+						<h3>SMM</h3>
+						<div class="services-row-item sr-item-3">
+							<h3>SMM</h3>
+							<p>Отдел по рекламе в социальных сетях готов справиться с любыми задачами: создание и ведение сообществ, наполнение контентом, вирусные видео, агенты влияния и работа с репутацией – работа с лояльной аудиторией или создание лояльной аудитории.</p>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="services-row">
-				<div class="services-row-item">
-					<h3>RTB/Programmatic</h3>
-					<p>«Умная» медийная реклама – это уже не будущее, а настоящее. Мы работаем с ведущими поставщиками данных, позволяющими точно найти нужный нашим клиентам подход к целевой аудитории. Мы обладаем достаточным опытом для прогноза целевых показателей (CPA, ROI и других) для любой медийной кампании.</p>
-				</div>
-				<div class="services-row-item correct-item">
-					<h3>Контекст</h3>
-					<p>Реклама, удовлетворяющая существующий спрос. Мы работаем напрямую с Яндексом и Google и контролируем весь процесс размещения в контексте. Сертифицированные специалисты агентства готовы решать любые задачи клиента.</p>
-				</div>
-				<div class="services-row-item">
-					<h3>SMM</h3>
-					<p>Отдел по рекламе в социальных сетях готов справиться с любыми задачами: создание и ведение сообществ, наполнение контентом, вирусные видео, агенты влияния и работа с репутацией – работа с лояльной аудиторией или создание лояльной аудитории.</p>
-				</div>
-			</div>
-			<div class="services-row">
-				<div class="services-row-item">
-					<h3>Онлайн-видео</h3>
-					<p>Размещение видеорекламы в Интернете. Формирование стратегии размещения онлайн-видео с целью достижения необходимых показателей, включая измерение увеличения узнаваемости бренда и запоминаемости рекламы (brand lift, ad recall).</p>
-				</div>
-				<div class="services-row-item correct-item">
-					<h3>Mobile/Apps</h3>
-					<p>Разработка стратегии и размещение мобильной рекламы. Рост мобильного траффика влияет на потребление рекламы. Как минимум, 40% аудитории выходит в Интернет с мобильных устройств.</p>
-				</div>
-				<div class="services-row-item">
-					<h3>Креатив и производство</h3>
-					<p>Наша креативная группа готова решать любые задачи: создание креативной стратегии в digital, производство любых рекламных материалов, включая видео и приложения, создание контента и наполнение, создание сайтов и посадочных страниц.</p>
-				</div>
-			</div>
-			<div class="copyright-3">
-				<div class="container">
-					<p>&copy; 2016 TMD. All Rights Reserved.</p>
-					<div class="mouse-scroll-3">
-						<img src="img/mouse-scroll.png" alt="mouse">
+				<div class="services-row">
+					<div class="services-pict pict-4">
+						<h3>Онлайн-видео</h3>
+						<div class="services-row-item sr-item-4">
+							<h3>Онлайн-видео</h3>
+							<p>Размещение видеорекламы в Интернете. Формирование стратегии размещения онлайн-видео с целью достижения необходимых показателей, включая измерение увеличения узнаваемости бренда и запоминаемости рекламы (brand lift, ad recall).</p>
+						</div>
+					</div>
+					<div class="services-pict pict-5">
+						<h3>Mobile/Apps</h3>
+						<div class="services-row-item correct-item sr-item-5">
+							<h3>Mobile/Apps</h3>
+							<p>Разработка стратегии и размещение мобильной рекламы. Рост мобильного траффика влияет на потребление рекламы. Как минимум, 40% аудитории выходит в Интернет с мобильных устройств.</p>
+						</div>
+					</div>
+					<div class="services-pict pict-6">
+						<h3>Креатив и производство</h3>
+						<div class="services-row-item sr-item-6">
+							<h3>Креатив и производство</h3>
+							<p>Наша креативная группа готова решать любые задачи: создание креативной стратегии в digital, производство любых рекламных материалов, включая видео и приложения, создание контента и наполнение, создание сайтов и посадочных страниц.</p>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</section>
-	<section>
-		<div class="wrapper-gray">
-			<div class="page-header">
-				<div class="logo-2">
-					<img  src="img/logo.png" width="100%" alt="logo">
-				</div>
-				<h1>Клиенты</h1>
-				<div class="main-menu">
-					<h2>Меню</h2>
-					<div class="main-menu__img">
-						<img src="img/icon-main-menu.png" width="100%" alt="menu">
-					</div>
-				</div>
+<!--
+		<div class="copyright-3">
+			<p>&copy; 2016 TMD. All Rights Reserved.</p>
+			<div class="mouse-scroll-3">
+				<img src="img/mouse-scroll.png" alt="mouse">
 			</div>
-			<div class="clients-block">
+		</div>
+-->
+	</div>
+</section>
+<section class="section" >
+	<div class="wrapper-gray">
+		<div class="block-header">
+			<h1>Клиенты</h1>
+		</div>
+		<div class="content_block_wrp">
+			<div class="rows-wrapper">
 				<div class="clients-row">
-					<div class="clients-row-item">
+					<div class="clients-row-item" id="wd">
 						<div class="wd-logo">
 							<img src="img/logo-wd.png" width="33%" alt="">
 						</div>
 					</div>
-					<div class="clients-row-item correct-item-frei">
+					<div class="clients-row-item frei-white" id="frei">
 						<div class="frei-logo">
 							<img src="img/logo-frei.png" width="33%" alt="">
 						</div>
 					</div>
-					<div class="clients-row-item">
+					<div class="clients-row-item" id="love-rep">
 						<div class="love-republic">
 							<img src="img/logo-love-republic.png" width="65%" alt="">
 						</div>
 					</div>
 				</div>
 				<div class="clients-row">
-					<div class="clients-row-item border-none">
+					<div class="clients-row-item border-none" id="kation">
 						<div class="kationorm">
 							<img src="img/logo-kationorm.png" width="65%" alt="">
 						</div>
 					</div>
-					<div class="clients-row-item border-none correct-item">
+					<div class="clients-row-item border-none" id="naturkoks">
 						<div class="natukoksinum">
 							<img src="img/logo-naturkoksinum.png" width="65%" alt="">
 						</div>
 					</div>
-					<div class="clients-row-item border-none">
+					<div class="clients-row-item border-none" id="intern-paper">
 						<div class="international-paper">
 							<img src="img/logo-international-paper.png" width="65%" alt="">
 						</div>
 					</div>
 				</div>
+			</div>
+		</div>
+		<div class="wrapper-popup wd">
+			<!-- Slider WD -->
+			<div class="slider-wd">
+				<!-- 1 Slide -->
+				<div id="owl-slider">
+					<div class="slider_item"><img src="img/bg-slide-1-wd.jpg" width="100%" alt=""></div>
+					<div class="slider_item"><img src="img/bg-slide-2-wd.jpg" width="100%" alt=""></div>
 				</div>
-				<div class="wrapper-popup wd">
-					<!-- Slider WD -->
-					<div class="slider-wd">
-						<!-- 1 Slide -->
-						<div class="slider-wd__item-1">
-							<div class="container">
-								<div class="slider-wd__title">
-									<h2>Счастливые моменты с Western Digital</h2>
-									<p>Контекстная реклама / Programmatic buying</p>
-								</div>
-								<div class="slider-wd__title__img">
-									<img src="img/wd-pic-red.png" width="28%" alt="">
-								</div>
-							</div>
+				<div class="slider-item">
+					<div class="close-popup">
+						<img src="img/icon-close-menu.png" width="100%" alt="">
+					</div>
+					<div class="container-pop">
+						<div class="slider-wd__title header-popup">
+							<h2>Счастливые моменты<br>с Western Digital</h2>
+							<p>Контекстная реклама / Programmatic buying</p>
 						</div>
-						<!-- 2 Slide  (открыть после подключения слайдера)-->
+<!--
+						<div class="slider-wd__title__img">
+							<img src="img/wd-pic-red.png" width="100%" alt="">
+							
+							
+						</div>
+					-->
+				</div>
+			</div>
+			<!-- 2 Slide  (открыть после подключения слайдера)-->
 		<!-- <div class="slider-wd__item-2">
 		<div class="container">
 			<div class="slider-wd__title">
@@ -259,7 +294,7 @@
 		</div> -->
 	</div>
 	<!-- End Slider -->
-	<div class="container">
+	<div class="container-pop">
 		<div class="popup-desc">
 			<div class="popup-desc__header">
 				<span>www.wdc.com</span>
@@ -282,24 +317,30 @@
 			<div class="popup-desc__row-2">
 				<h3>Решение</h3>
 				<p>Краткосрочное: контекстная реклама на Яндексе и Google, programmatic buying – DoubleClick bid manager и GDN</p>
-				<p>Долгосрочное: медийно-контекстный баннер на Яндексе, портальная сеть Яндекса на основе интересов, mail.ru и odnoklassniki.ru, спецпроекты на hi-tech.mail.ru и на промосайте, приуроченные к 23 февраля и 8 марта, а также – к летним отпускам; Онлайн-видео на YouTube с таргетингом на целевую аудиторию</p>
+				<p>Долгосрочное: медийно-контекстный баннер на Яндексе, портальная сеть Яндекса на основе интересов, mail.ru и odnoklassniki.ru, спецпроекты на hi-tech.mail.ru и на промосайте, приуроченные к 23 февраля и 8 марта, а также – к летним отпускам; онлайн-видео на YouTube с таргетингом на целевую аудиторию</p>
 			</div>
 		</div>
 	</div>
-</div>
+</div> 
 <!-- Frei -->
 <div class="wrapper-popup frei">
 	<div class="slider-frei">
-		<div class="slider-frei__item">
-			<div class="container">
-				<div class="slider-frei__title">
+
+		<img src="img/bg-frei.jpg" alt="">
+
+		<div class="slider-item">
+			<div class="close-popup">
+				<img src="img/icon-close-menu.png" width="100%" alt="">
+			</div>
+			<div class="container-pop">
+				<div class="slider-frei__title header-popup">
 					<h2>Аптечная косметика</h2>
 					<p>SMM-кампания</p>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="container">
+	<div class="container-pop">
 		<div class="popup-desc">
 			<div class="popup-desc__header">
 				<span>www.vk.com/frei.club</span>
@@ -329,18 +370,23 @@
 	</div>
 </div>
 <!-- LOVE REPUBLIC -->
-<div class="wrapper-popup love">
+<div class="wrapper-popup love-rep">
 	<div class="slider-love">
-		<div class="slider-love__item">
-			<div class="container">
-				<div class="slider-love__title">
-					<h2>Изящество силуэтов и модный дизайн</h2>
+		<img src="img/bg-love-republic.jpg" alt="">
+		<div class="slider-item">
+
+			<div class="close-popup">
+				<img src="img/icon-close-menu.png" width="100%" alt="">
+			</div>
+			<div class="container-pop">
+				<div class="slider-love__title header-popup">
+					<h2>Изящество силуэтов<br>и модный дизайн</h2>
 					<p>Programmatic buying / Онлайн-видео</p>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="container">
+	<div class="container-pop">
 		<div class="popup-desc">
 			<div class="popup-desc__header">
 				<span>www.loverepublic.ru</span>
@@ -369,18 +415,22 @@
 	</div>
 </div>
 <!-- КАТИОНОРМ -->
-<div class="wrapper-popup katio">
+<div class="wrapper-popup kation">
 	<div class="slider-katio">
-		<div class="slider-katio__item">
-			<div class="container">
-				<div class="slider-katio__title">
+		<img src="img/bg-kationorm.jpg" alt="">
+		<div class="slider-item">
+			<div class="close-popup">
+				<img src="img/icon-close-menu.png" width="100%" alt="">
+			</div>
+			<div class="container-pop">
+				<div class="slider-katio__title header-popup">
 					<h2>Сила притяжения</h2>
 					<p>Сайт / Контекст / Programmatic<br> Segmento / SMM / Онлайн-видео</p>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="container">
+	<div class="container-pop">
 		<div class="popup-desc">
 			<div class="popup-desc__header">
 				<span>www.procationorm.ru</span>
@@ -408,18 +458,22 @@
 	</div>
 </div>
 <!-- НАТУРКОКСИНУМ -->
-<div class="wrapper-popup natur">
+<div class="wrapper-popup naturkoks">
 	<div class="slider-natur">
-		<div class="slider-natur__item">
-			<div class="container">
-				<div class="slider-natur__title">
+		<img src="img/bg-natur.jpg" alt="">
+		<div class="slider-item">
+			<div class="close-popup">
+				<img src="img/icon-close-menu.png" width="100%" alt="">
+			</div>
+			<div class="container-pop">
+				<div class="slider-natur__title header-popup">
 					<h2>Средство от простуды</h2>
 					<p>Контекст / SMM / Онлайн-видео</p>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="container">
+	<div class="container-pop">
 		<div class="popup-desc">
 			<div class="popup-desc__header">
 				<span>www.naturkoksinum.ru</span>
@@ -447,18 +501,22 @@
 	</div>
 </div>
 <!-- INTERNATIONAL PAPER -->
-<div class="wrapper-popup paper">
+<div class="wrapper-popup intern-paper">
 	<div class="slider-paper">
-		<div class="slider-paper__item">
-			<div class="container">
-				<div class="slider-paper__title">
+		<img src="img/bg-paper.jpg" alt="">
+		<div class="slider-item">
+			<div class="close-popup">
+				<img src="img/icon-close-menu.png" width="100%" alt="">
+			</div>
+			<div class="container-pop">
+				<div class="slider-paper__title header-popup">
 					<h2>Офисная бумага</h2>
 					<p>Онлайн-видео / Programmatic / Контекст / SEO</p>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="container">
+	<div class="container-pop">
 		<div class="popup-desc">
 			<div class="popup-desc__header">
 				<span>www.internationalpaper.com</span>
@@ -486,28 +544,19 @@
 	</div>
 </div>
 <div class="copyright-3">
-	<div class="container">
-		<p>&copy; 2016 TMD. All Rights Reserved.</p>
-		<div class="mouse-scroll-3">
-			<img src="img/mouse-scroll.png" alt="mouse">
-		</div>
+	
+	<p>&copy; 2016 TMD. All Rights Reserved.</p>
+	<div class="mouse-scroll-3">
+		<img src="img/mouse-scroll.png" alt="mouse">
 	</div>
+	
 </div>
 </div>
 </section>
-<section>
+<section class="section" >
 	<div class="wrapper-white">
-		<div class="page-header margin">
-			<div class="logo-2">
-				<img  src="img/logo.png" width="100%" alt="logo">
-			</div>
+		<div class="block-header margin">
 			<h1>Контакты</h1>
-			<div class="main-menu">
-				<h2>Меню</h2>
-				<div class="main-menu__img">
-					<img src="img/icon-main-menu.png" width="100%" alt="menu">
-				</div>
-			</div>
 		</div>
 		<div class="contact-block">
 			<h2>+7(499) 394-61-15</h2>
@@ -518,25 +567,29 @@
 				<input type="text" name="name" placeholder="Представьтесь, пожалуйста">
 				<input type="tel" name="tel" placeholder="Ваш контактный телефон">
 			</div>
-			<input type="submit" value=" Отправить">
+			<input type="submit" value="Отправить">
 		</form>
 		<div class="map-cover">
 			<div class="map">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2243.268317340783!2d37.728955681956016!3d55.78857864062148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b535113ab437e7%3A0xeb5ac7a530eba670!2z0YPQuy4g0JjQsdGA0LDQs9C40LzQvtCy0LAsIDMxLCDQnNC-0YHQutCy0LAsIDEwNTMxOA!5e0!3m2!1sru!2sru!4v1465081021714" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2243.268317340783!2d37.728955681956016!3d55.78857864062148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b535113ab437e7%3A0xeb5ac7a530eba670!2z0YPQuy4g0JjQsdGA0LDQs9C40LzQvtCy0LAsIDMxLCDQnNC-0YHQutCy0LAsIDEwNTMxOA!5e0!3m2!1sru!2sru!4v1465081021714" width="100%" height="700" allowfullscreen></iframe>
 			</div>
 		</div>
 	</div>
-	<div class="wrapper-gray">
+
+	<div class="wrapper-contacts">
 		<div class="copyright-4">
 			<p>&copy; 2016 TMD. All Rights Reserved.</p>
 			<div class="social">
-				<p>Социальные сети - </p>
+				<p>Социальные сети</p>
 				<a class="fb" href="#"><img src="img/icon-fb.png" alt=""></a>
 				<a class="insta" href="#"><img src="img/icon-instagram.png" alt=""></a>
 				<a class="youtube" href="#"><img src="img/icon-youtube.png" alt=""></a>
 			</div>
 		</div>
 	</div>
+
 </section>
+
+</div>
 </body>
 </html>
