@@ -301,7 +301,9 @@ section {
 	align-content: center;
 	margin-right: 5%;
 	height: 3vw;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 
 .main-menu h2 {
@@ -690,7 +692,8 @@ section {
 	/*overflow: hidden;*/
 	border-bottom: 1px solid #dddddd;
 	border-top: 1px solid #dddddd;
-	flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 }
 
 
@@ -800,7 +803,9 @@ section {
 	align-items: center;
 	-ms-flex-wrap: nowrap;
 	flex-wrap: nowrap;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	height: 8vw;
 }
 
@@ -1548,8 +1553,13 @@ section {
 	}
 
 	.about-company {
-		flex-direction: column;
-		justify-content: space-between;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
 	}
 
 	.about-company__desc {
@@ -1570,15 +1580,22 @@ section {
 	}
 
 	.we-do {
-		order: 2;
+		-webkit-box-ordinal-group: 3;
+		    -ms-flex-order: 2;
+		        order: 2;
 	}
 
 	.about-company__desc--we-do {
-		order: 1;
+		-webkit-box-ordinal-group: 2;
+		    -ms-flex-order: 1;
+		        order: 1;
 	}
 
 	.services-row {
-		flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
 	}
 
 	.services-pict h3 {
@@ -1611,7 +1628,10 @@ section {
 	}
 	
 	.clients-row {
-		flex-direction: column;	
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;	
 		height: 143vw;
 	}
 
@@ -1641,19 +1661,35 @@ section {
 	.call-request {
 		width: 100%;
 		height: 47vw;
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		flex-direction: column;
-		justify-content: center;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
 	}
 
 	.request-field {
 		height: 30vw;
 		width: 100vw;
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
 		margin-bottom: 2%;
-		justify-content: center;
-		align-items: center;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
 	}
 
 	.call-request input[type="submit"] {
@@ -1706,7 +1742,8 @@ section {
 		height: 50vw;
 		display: block;
 		background-color: rgba(0, 0, 0, 0.1);
-		transform: rotate(-7.8deg) skew(-7.8deg);
+		-webkit-transform: rotate(-7.8deg) skew(-7.8deg);
+		        transform: rotate(-7.8deg) skew(-7.8deg);
 		position: absolute;
 		top: 85%;
 		right: 0;
@@ -1781,14 +1818,20 @@ section {
 	.request-field {
 		/*height: 30%;*/
 		width: 100vw;
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		justify-content: center;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
 		/*margin-bottom: 3%;*/
 	}
 
 
 	.call-request {
-		justify-content: center;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
 		height: 13vw;
 		z-index: 200;
 	}
