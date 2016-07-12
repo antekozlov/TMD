@@ -327,16 +327,17 @@ section {
 
 /* about-company */
 
-.content_block_wrp {
+/*.content_block_wrp {
 	width: 100%;
 	height: 65%;
 	overflow: hidden;
 	display: table;
-}
+}*/
 
 .rows-wrapper {
     display: table-cell;
     vertical-align: middle;
+    width: 100%;
 }
 
 #about h1 {
@@ -366,7 +367,7 @@ section {
 	justify-content: center;
 	-ms-flex-wrap: nowrap;
 	flex-wrap: nowrap;
-	height: 33%;
+	height: 24%;
 }
 
 .about_block {
@@ -488,6 +489,8 @@ section {
 .copyright-3 {
 	position: absolute;
 	bottom: 0;
+	left: 0;
+	right: 0;
 	width: 100%;
 }
 
@@ -495,7 +498,7 @@ section {
 .mouse-scroll-3 img {
 	position: absolute;
 	left: 49%;
-	top: -20%;
+	top: -90%;
 }
 
 /* Slide #3 */
@@ -514,10 +517,12 @@ section {
 	justify-content: space-around;
 	text-align: center;
 	width: 100%;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 }
 
 .services-pict {
-	width: 23.0526%;
+	width: 26%;
 	height: 16vw;
 	border-top: 1px solid #939393;
 	border-bottom: 1px solid #939393;
@@ -533,32 +538,32 @@ section {
 
 .pict-1 {
 	background: url("../img/rtb-icon.png") no-repeat 50% 70%;
-	background-size: 25%;
+	background-size: 20%;
 }
 
 .pict-2 {
 	background: url("../img/context-icon.png") no-repeat 50% 70%;
-	background-size: 25%;
+	background-size: 20%;
 }
 
 .pict-3 {
 	background: url("../img/smm-icon.png") no-repeat 50% 70%;
-	background-size: 25%;
+	background-size: 20%;
 }
 
 .pict-4 {
 	background: url("../img/video-icon.png") no-repeat 50% 70%;
-	background-size: 25%;
+	background-size: 20%;
 }
 
 .pict-5 {
 	background: url("../img/mobile-icon.png") no-repeat 50% 70%;
-	background-size: 17%;
+	background-size: 12%;
 }
 
 .pict-6 {
 	background: url("../img/creativ-icon.png") no-repeat 50% 70%;
-	background-size: 25%;
+	background-size: 20%;
 }
 
 .sr-item-1 {
@@ -679,18 +684,18 @@ section {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-	/*width: 100%;*/
+	/*-webkit-box-pack: center;*/
+	/*-ms-flex-pack: center;*/
 	height: 15vw;
-	overflow: hidden;
-	border: 1px solid #dddddd;
+	/*overflow: hidden;*/
+	border-bottom: 1px solid #dddddd;
+	border-top: 1px solid #dddddd;
+	flex-wrap: wrap;
 }
 
 
 .clients-row-item {
-	width: 33.3686%;
+	width: 33.1686%;
 	height: 100%;
 	text-align: center;
 	-ms-flex-item-align: center;
@@ -705,7 +710,13 @@ section {
 /*	opacity: .5;*/
 }
 
-.clients-row-item:last-child {
+.clients-row-item:nth-child(1),
+.clients-row-item:nth-child(4) {
+	border-left: none;
+}
+
+.clients-row-item:nth-child(3),
+.clients-row-item:nth-child(6) {
 	border-right: none;
 }
 
@@ -714,14 +725,13 @@ section {
 }
 
 .frei-logo {
-/*	background-color: #fff;*/
+	background-color: #fff;
 	width: 100%;
-	/*height: 16.8421vw;*/
-	/*border-bottom: none;*/
+	height: 100%;
 }
 
 .frei-white {
-/*	background-color: #fff;*/
+	background-color: #fff;
 }
 
 
@@ -1576,9 +1586,13 @@ section {
 	}
 
 	.services-pict {
-		width: 100%;
+		width: 100vw;
 		height: 50vw;
 		border-top: none;
+	}
+
+	.services-pict:nth-child(1) {
+		border-top: 1px solid #939393;
 	}
 
 	.services-row-item p {
@@ -1703,6 +1717,10 @@ section {
 		/*font-size: 9vw;*/
 	}
 
+	.services-row-item {
+		width: 136vw;
+	}
+
 }
 
 
@@ -1740,9 +1758,9 @@ section {
 		font-size: 1.6vw;
 	}
 
-	.rows-wrapper {
+/*	.rows-wrapper {
 		vertical-align: top;
-	}
+	}*/
 
 	.mouse-scroll-2 img, .mouse-scroll-3 img {
 		display: none;
@@ -1823,6 +1841,53 @@ section {
 	.copyright-4 p {
 		font-size: 1.4vw;
 	}
+
+	.services-pict {
+		width: 34%;
+		height: 24vw;
+		border-top: none;
+	}
+
+	.services-pict:nth-child(1),
+	.services-pict:nth-child(2) {
+		border-top: 1px solid #939393;
+	}
+
+	.services-row-item {
+		width: 50vw;
+	}
+
+	.services-row-item h3 {
+		font-size: 3vw;
+	}
+
+	.services-row-item p {
+		font-size: 1.7vw;
+		padding-left: 2%;
+		padding-right: 6%;
+	}
+
+	.services-pict h3 {
+		font-size: 2.8vw;
+	}
+
+	.clients-row-item {
+		width: 49.9%;
+	}
+
+	.clients-row {
+		height: 24vw;
+	}
+
+.clients-row-item:nth-child(2),
+.clients-row-item:nth-child(4) {
+	border-right: none;
+}
+
+.clients-row-item:nth-child(3) {
+	border-right: 1px solid #dddddd;
+	border-bottom: 1px solid #dddddd;
+}
 
 
 }
