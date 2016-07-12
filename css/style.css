@@ -642,7 +642,7 @@ section {
 }
 
 .services-row-item {
-	width: 140%;
+	width: 33vw;
 	height: 103%;
 	background: url("../img/bg-services-item.png") no-repeat;
 	text-align: center;
