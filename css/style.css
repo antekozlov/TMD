@@ -337,8 +337,9 @@ section {
 }*/
 
 .rows-wrapper {
-    display: table-cell;
-    vertical-align: middle;
+/*    display: table-cell;*/
+/*    vertical-align: middle;*/
+    display: block;
     width: 100%;
 }
 
@@ -512,7 +513,7 @@ section {
 }
 
 .services-row {
-	display: -webkit-box;
+	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
 	-ms-flex-pack: distribute;
@@ -520,7 +521,10 @@ section {
 	text-align: center;
 	width: 100%;
 	-ms-flex-wrap: wrap;
-	    flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -webkit-align-items:center;
+    -webkit-justify-content: space-around;
 }
 
 .services-pict {
@@ -683,7 +687,7 @@ section {
 /* Slide #4 */
 
 .clients-row {
-	display: -webkit-box;
+	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
 	/*-webkit-box-pack: center;*/
@@ -693,8 +697,15 @@ section {
 	border-bottom: 1px solid #dddddd;
 	border-top: 1px solid #dddddd;
 	-ms-flex-wrap: wrap;
-	    flex-wrap: wrap;
+	flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -webkit-align-items:center;
+    -webkit-justify-content: space-around;
 }
+
+
+
+
 
 
 .clients-row-item {
@@ -728,7 +739,6 @@ section {
 }
 
 .frei-logo {
-	background-color: #fff;
 	width: 100%;
 	height: 100%;
 }
@@ -1393,10 +1403,10 @@ section {
 
 .wrapper-contacts {
 	position: absolute;
-	bottom: 0;
-	width: 100%;
-	/*height: 3vw;*/
-	z-index: 100;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    z-index: 100;
 }
 
 /*  иконки закрытия попАп */
@@ -1465,6 +1475,10 @@ section {
 .owl-next{
 	right: 5%;
 	background-position: right;
+}
+
+.contacts_block .fp-scroller {
+    height: 100%;
 }
 
 /* Мобильная версия */
@@ -1545,7 +1559,7 @@ section {
 	}
 
 	.block-header {
-		margin-top: 12%;
+        padding-top: 15vw;
 	}
 
 	.block-header h1 {
@@ -1632,12 +1646,13 @@ section {
 		-webkit-box-direction: normal;
 		    -ms-flex-direction: column;
 		        flex-direction: column;	
-		height: 143vw;
+		height: auto;
 	}
 
 	.clients-row-item {
 		width: 100%;
 		border-bottom: 1px solid #dddddd;
+        height: 50vw;
 	}
 
 
@@ -1757,6 +1772,23 @@ section {
 	.services-row-item {
 		width: 136vw;
 	}
+
+}
+
+@media(max-width: 420px) {
+
+    .map::after {
+        display: none;
+    }
+
+    .place-card {
+        display: none !important;
+    }
+
+    .contacts_block .fp-scroller {
+
+    }
+
 
 }
 
