@@ -13,12 +13,10 @@ $(document).ready(function() {
          css3: true,
          scrollOverflow: true,
          touchSensitivity: 15,
-         normalScrollElementTouchThreshold: 5,
+         normalScrollElementTouchThreshold: 10,
          fitToSection: true
-        
-         
-        
     });
+
     bindEvents();
   
   $('#owl-slider').owlCarousel({
@@ -40,7 +38,7 @@ function bindEvents(){
     });  
     
     $('.services-pict').on('click', function(){
-        console.log("touch start");
+//        console.log("touch start");
         $('.services-pict').removeClass('touch');
         $(this).addClass('touch');  
     });
